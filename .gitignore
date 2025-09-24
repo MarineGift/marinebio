@@ -3,8 +3,10 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnp
+.pnp.js
 
-# Next.js
+# Next.js build artifacts
 .next/
 out/
 build/
@@ -16,17 +18,11 @@ build/
 .env.test.local
 .env.production.local
 
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Logs
+# Log files
 *.log
 logs/
 
@@ -36,26 +32,26 @@ pids/
 *.seed
 *.pid.lock
 
-# Coverage directory used by tools like istanbul
+# Test coverage
 coverage/
-
-# Dependencies
-.pnp
-.pnp.js
-
-# Docker
-.dockerignore
 
 # Temporary folders
 tmp/
 temp/
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# (JetBrains IDEs like WebStorm)
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# (Vim)
+*.swp
+*.swo
+
+# (VSCode) - Share recommended extensions, but ignore other user-specific settings
+.vscode/*
+!.vscode/extensions.json
